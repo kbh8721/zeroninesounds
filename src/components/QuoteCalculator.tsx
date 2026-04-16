@@ -4,10 +4,10 @@ import { Check, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const serviceOptions = [
-  { id: 'mixing', label: 'Stem Mixing', basePrice: 300 },
-  { id: 'mastering', label: 'Stereo Mastering', basePrice: 100 },
-  { id: 'stem-mastering', label: 'Stem Mastering', basePrice: 150 },
-  { id: 'sound-design', label: 'Sound Design', basePrice: 500 },
+  { id: 'mixing', label: '스템 믹싱', basePrice: 300 },
+  { id: 'mastering', label: '스테레오 마스터링', basePrice: 100 },
+  { id: 'stem-mastering', label: '스템 마스터링', basePrice: 150 },
+  { id: 'sound-design', label: '사운드 디자인', basePrice: 500 },
 ];
 
 export function QuoteCalculator() {
@@ -53,17 +53,17 @@ export function QuoteCalculator() {
   return (
     <section className="py-12 md:py-0 px-6 md:px-0">
       <div className="md:widget">
-        <div className="md:widget-title hidden md:block">Smart Estimate</div>
+        <div className="md:widget-title hidden md:block">스마트 견적</div>
         
         <div className="md:hidden mb-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-2">Smart Quote</h2>
-          <p className="text-text-secondary font-light text-sm">Select services for an instant estimate.</p>
+          <h2 className="text-3xl font-bold tracking-tight mb-2">스마트 견적</h2>
+          <p className="text-text-secondary font-light text-sm">서비스를 선택하고 즉시 견적을 확인하세요.</p>
         </div>
 
         <div className="space-y-6 md:space-y-4">
           {/* Services Selection */}
           <div>
-            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">1. Select Services</h3>
+            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">1. 서비스 선택</h3>
             <div className="grid grid-cols-1 gap-2">
               {serviceOptions.map(service => (
                 <button
@@ -92,10 +92,10 @@ export function QuoteCalculator() {
 
           {/* Track Count */}
           <div>
-            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">2. Number of Tracks</h3>
+            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">2. 트랙 수</h3>
             <div className="flex items-center justify-between text-sm text-text-secondary mb-2 hidden md:flex">
-              <span>Tracks</span>
-              <span className="text-white">{trackCount} Stem</span>
+              <span>트랙</span>
+              <span className="text-white">{trackCount} 스템</span>
             </div>
             <div className="flex items-center gap-4">
               <input 
@@ -114,10 +114,10 @@ export function QuoteCalculator() {
 
           {/* Rush Delivery */}
           <div>
-            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">3. Timeline</h3>
+            <h3 className="text-sm font-medium mb-3 text-white/80 md:hidden">3. 작업 기간</h3>
             <div className="flex items-center justify-between text-sm text-text-secondary mb-2 hidden md:flex">
-              <span>Turnaround</span>
-              <span className="text-white">{isRush ? '48 Hours' : 'Standard'}</span>
+              <span>소요 시간</span>
+              <span className="text-white">{isRush ? '48시간' : '일반'}</span>
             </div>
             <button
               onClick={() => setIsRush(!isRush)}
@@ -127,7 +127,7 @@ export function QuoteCalculator() {
               )}
             >
               <div>
-                <span className={cn("font-medium block text-left text-sm", isRush ? "text-primary" : "text-white")}>Rush Delivery</span>
+                <span className={cn("font-medium block text-left text-sm", isRush ? "text-primary" : "text-white")}>빠른 작업 (Rush)</span>
               </div>
               <div className={cn(
                 "w-8 h-4 rounded-full transition-colors relative",
@@ -145,7 +145,7 @@ export function QuoteCalculator() {
 
         {/* Total Display */}
         <div className="mt-6 pt-4 border-t border-deep-gray flex justify-between items-baseline">
-          <span className="text-sm text-text-secondary">Total Estimate</span>
+          <span className="text-sm text-text-secondary">예상 총액</span>
           <span className="text-2xl font-bold text-primary">${total.toFixed(2)}</span>
         </div>
       </div>

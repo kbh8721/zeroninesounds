@@ -56,8 +56,8 @@ export default function App() {
 
       {/* Header */}
       <header className="hidden md:flex col-start-2 col-end-3 items-center justify-between px-10 border-b border-deep-gray bg-background z-40">
-        <div className="text-[11px] font-mono uppercase tracking-[2px] text-text-secondary">Engineered for Perfection // Studio Status: Online</div>
-        <div className="text-[12px] font-mono opacity-80">ENGINEER_01 // SEOUL</div>
+        <div className="text-[11px] font-mono uppercase tracking-[2px] text-text-secondary">완벽을 위한 엔지니어링 // 스튜디오 상태: 온라인</div>
+        <div className="text-[12px] font-mono opacity-80">엔지니어_01 // 서울</div>
       </header>
 
       {/* Main Stage */}
@@ -97,7 +97,7 @@ export default function App() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-background opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-background"></span>
           </span>
-          Free Consultation
+          무료 컨설팅
         </button>
       </div>
     </div>

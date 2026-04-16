@@ -4,26 +4,26 @@ import { Sliders, Disc3, Mic2, Activity } from 'lucide-react';
 const services = [
   {
     id: 'mixing',
-    title: 'Mixing',
-    description: 'Achieve perfect balance, depth, and clarity. We sculpt each track to sit perfectly in the sonic landscape.',
+    title: '믹싱 (Mixing)',
+    description: '완벽한 밸런스, 깊이, 선명도를 달성하세요. 각 트랙이 사운드스케이프에 완벽하게 자리잡도록 조각합니다.',
     icon: Sliders,
   },
   {
     id: 'mastering',
-    title: 'Mastering',
-    description: 'The final polish. Ensuring your track translates flawlessly across all playback systems with competitive loudness.',
+    title: '마스터링 (Mastering)',
+    description: '최종 완성 단계. 경쟁력 있는 음압으로 모든 재생 시스템에서 트랙이 완벽하게 재생되도록 보장합니다.',
     icon: Disc3,
   },
   {
     id: 'sound-design',
-    title: 'Sound Design',
-    description: 'Creating unique, bespoke sounds from scratch for film, games, and electronic music production.',
+    title: '사운드 디자인 (Sound Design)',
+    description: '영화, 게임 및 전자 음악 프로덕션을 위해 처음부터 독특하고 맞춤화된 사운드를 창조합니다.',
     icon: Activity,
   },
   {
     id: 'vocal-tuning',
-    title: 'Vocal Production',
-    description: 'Precise tuning, timing correction, and processing to make your lead vocals shine and sit upfront.',
+    title: '보컬 프로덕션 (Vocal Production)',
+    description: '리드 보컬이 빛나고 전면에 나서도록 하는 정밀한 튜닝, 타이밍 보정 및 프로세싱.',
     icon: Mic2,
   }
 ];
@@ -32,9 +32,9 @@ export function Services() {
   return (
     <section className="py-12 md:py-20 px-6 md:px-10 max-w-7xl mx-auto flex flex-col justify-center">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Our Expertise</h2>
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">전문 분야</h2>
         <p className="text-text-secondary max-w-2xl font-light text-sm md:text-base">
-          We combine analog warmth with digital precision to bring your sonic vision to life.
+          아날로그의 따뜻함과 디지털의 정밀함을 결합하여 당신의 사운드 비전을 현실로 만듭니다.
         </p>
       </div>
 

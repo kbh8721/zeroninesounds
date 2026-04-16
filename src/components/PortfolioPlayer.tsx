@@ -37,9 +37,9 @@ export function PortfolioPlayer() {
   return (
     <section className="py-12 md:py-0 px-6 md:px-10 md:h-[90px] flex flex-col md:flex-row md:items-center w-full relative">
       <div className="mb-8 md:hidden">
-        <h2 className="text-3xl font-bold tracking-tight mb-2">Selected Works</h2>
+        <h2 className="text-3xl font-bold tracking-tight mb-2">주요 작업물</h2>
         <p className="text-text-secondary font-light text-sm">
-          High-fidelity audio streaming directly from our studio masters.
+          스튜디오 마스터에서 직접 스트리밍되는 고음질 오디오.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export function PortfolioPlayer() {
         showTrackList ? "md:block" : ""
       )}>
         <div className="hidden md:flex justify-between items-center mb-4">
-          <h3 className="font-semibold">Tracks</h3>
+          <h3 className="font-semibold">트랙 목록</h3>
           <button onClick={() => setShowTrackList(false)} className="text-text-secondary hover:text-white">✕</button>
         </div>
         {tracks.map((track) => (
@@ -100,7 +100,7 @@ export function PortfolioPlayer() {
           <button 
             onClick={() => setShowTrackList(!showTrackList)}
             className="hidden md:flex w-8 h-8 rounded bg-surface border border-deep-gray items-center justify-center hover:border-primary/50 transition-colors"
-            title="Toggle Track List"
+            title="트랙 목록 전환"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
           </button>
@@ -150,7 +150,7 @@ export function PortfolioPlayer() {
           <div className="w-10 h-10 rounded-full border-4 border-deep-gray relative">
             <div className="absolute top-1 left-1/2 -translate-x-1/2 w-0.5 h-2 bg-primary" />
           </div>
-          <div className="font-mono text-[10px] text-text-secondary">GAIN 100%</div>
+          <div className="font-mono text-[10px] text-text-secondary">게인 100%</div>
         </div>
 
         {/* Mobile Volume */}

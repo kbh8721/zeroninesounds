@@ -19,7 +19,7 @@ export function Hero({ setActiveSection }: { setActiveSection: (id: string) => v
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-xs font-mono text-gray-300 tracking-wider">HIGH-END AUDIO ENGINEERING</span>
+          <span className="text-xs font-mono text-gray-300 tracking-wider">하이엔드 오디오 엔지니어링</span>
         </motion.div>
 
         <motion.h1
@@ -28,8 +28,8 @@ export function Hero({ setActiveSection }: { setActiveSection: (id: string) => v
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-5xl md:text-[56px] font-black tracking-tighter mb-4 leading-[0.95]"
         >
-          SONIC<br />
-          <span className="text-primary">PRECISION</span>
+          압도적인<br />
+          <span className="text-primary">사운드</span>
         </motion.h1>
 
         <motion.p
@@ -38,7 +38,7 @@ export function Hero({ setActiveSection }: { setActiveSection: (id: string) => v
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-sm md:text-[14px] text-text-secondary max-w-[400px] mb-12 font-normal leading-[1.6]"
         >
-          High-end mixing, mastering, and sound design for artists who demand unparalleled audio clarity and depth.
+          타의 추종을 불허하는 오디오 선명도와 깊이를 원하는 아티스트를 위한 하이엔드 믹싱, 마스터링 및 사운드 디자인.
         </motion.p>
 
         <motion.div
@@ -53,7 +53,7 @@ export function Hero({ setActiveSection }: { setActiveSection: (id: string) => v
           >
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
             <span className="relative flex items-center justify-center gap-2">
-              Listen to Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              포트폴리오 듣기 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </span>
           </button>
         </motion.div>

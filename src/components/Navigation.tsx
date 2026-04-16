@@ -4,11 +4,11 @@ import { Home, Layers, Headphones, Calculator, Calendar, Menu, X } from 'lucide-
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { id: 'home', label: 'Home', icon: Home },
-  { id: 'services', label: 'Services', icon: Layers },
-  { id: 'works', label: 'Works', icon: Headphones },
-  { id: 'calculator', label: 'Quote', icon: Calculator },
-  { id: 'booking', label: 'Booking', icon: Calendar },
+  { id: 'home', label: '홈', icon: Home },
+  { id: 'services', label: '서비스', icon: Layers },
+  { id: 'works', label: '포트폴리오', icon: Headphones },
+  { id: 'calculator', label: '견적', icon: Calculator },
+  { id: 'booking', label: '예약', icon: Calendar },
 ];
 
 export function Navigation({ activeSection, setActiveSection, isSidebar = false }: { activeSection: string, setActiveSection: (id: string) => void, isSidebar?: boolean }) {
@@ -96,7 +96,7 @@ export function Navigation({ activeSection, setActiveSection, isSidebar = false 
                 onClick={() => setActiveSection('booking')}
                 className="px-5 py-2 rounded-full bg-primary/10 text-primary border border-primary/30 hover:bg-primary hover:text-background transition-all duration-300 text-sm font-semibold"
               >
-                Consulting
+                컨설팅
               </button>
             </div>
           </div>
