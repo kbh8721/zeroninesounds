@@ -26,10 +26,10 @@ export function Hero({ setActiveSection }: { setActiveSection: (id: string) => v
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-[56px] font-black tracking-tighter mb-4 leading-[0.95]"
+          className="text-5xl md:text-[64px] font-black tracking-tighter mb-4 leading-[1.1]"
         >
-          압도적인<br />
-          <span className="text-primary">사운드</span>
+          <span className="text-primary drop-shadow-[0_0_20px_rgba(0,229,255,0.6)]">옹구뽈</span><br />
+          <span className="text-4xl md:text-[48px] text-white">압도적인 사운드</span>
         </motion.h1>
 
         <motion.p

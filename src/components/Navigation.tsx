@@ -31,10 +31,10 @@ export function Navigation({ activeSection, setActiveSection, isSidebar = false 
           className="hidden md:flex flex-col items-center pt-5 gap-10 h-full w-full"
         >
           <div 
-            className="text-2xl font-bold tracking-tighter cursor-pointer text-primary"
+            className="text-xl font-black tracking-tighter cursor-pointer bg-primary text-background px-4 py-2 rounded-xl shadow-[0_0_20px_rgba(0,229,255,0.6)]"
             onClick={() => setActiveSection('home')}
           >
-            09
+            옹구뽈
           </div>
           
           <div className="flex flex-col items-center gap-8 opacity-60 mt-4">
@@ -66,10 +66,10 @@ export function Navigation({ activeSection, setActiveSection, isSidebar = false 
         >
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
             <div 
-              className="text-2xl font-bold tracking-tighter cursor-pointer"
+              className="text-3xl font-black tracking-tighter cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-white to-primary drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]"
               onClick={() => setActiveSection('home')}
             >
-              zeronine<span className="text-primary">.</span>
+              옹구뽈<span className="text-primary">.</span>
             </div>
             
             <div className="flex items-center gap-8">
