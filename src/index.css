@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: #0D0D0D;
+  --color-matte-black: #121212;
+  --color-deep-gray: #2C2C2C;
+  --color-primary: #00E5FF;
+  --color-text-secondary: #8E9299;
+  
+  --color-surface: #121212;
+  --color-surface-light: #2C2C2C;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-white font-sans antialiased selection:bg-primary/30 selection:text-primary overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-matte-black/80 backdrop-blur-xl border border-deep-gray shadow-[0_8px_32px_rgba(0,0,0,0.4)];
+  }
+  .neon-text {
+    @apply text-primary drop-shadow-[0_0_8px_rgba(0,229,255,0.6)];
+  }
+  .neon-border {
+    @apply border-primary/50 shadow-[0_0_10px_rgba(0,229,255,0.2)_inset,0_0_10px_rgba(0,229,255,0.2)];
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .widget {
+    @apply bg-[#2C2C2C]/40 border border-white/5 rounded-xl p-5;
+  }
+  .widget-title {
+    @apply font-mono text-[10px] text-primary uppercase mb-[15px] tracking-[1px];
+  }
+}
